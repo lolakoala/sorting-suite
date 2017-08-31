@@ -1,5 +1,13 @@
-const filterMe = (array) => {
-  return array
-}
+const randomArray = require('./random.js');
+const bubbleSort = require('./bubble.js');
+const insertionSort = require('./insertion.js');
+const mergeSort = require('./merge.js');
+const quickSort = require('./quick.js');
 
-export default filterMe
+module.exports = {
+  randomArray,
+  bubbleSort,
+  insertionSort,
+  mergeSort,
+  quickSort
+}
