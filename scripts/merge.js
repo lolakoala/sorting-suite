@@ -6,10 +6,10 @@ function mergeSort(array) {
   let array1 = array.slice(0, halfArray);
   let array2 = array.slice(halfArray);
 
-  return babyMerge(mergeSort(array1), mergeSort(array2))
+  return merge(mergeSort(array1), mergeSort(array2))
 }
 
-function babyMerge(ar1, ar2) {
+function merge(ar1, ar2) {
   let newArr = [];
 
   while (ar1.length !== 0 && ar2.length !== 0) {
